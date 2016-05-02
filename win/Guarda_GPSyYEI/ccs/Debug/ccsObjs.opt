@@ -1,0 +1,1 @@
+"./startup_ccs.obj" "./main.obj" "./ff.obj" "./diskio.obj" "./buttons.obj" -l"C:/StellarisWare/boards/Mi_carpetita/Guarda_GPSyYEI/ccs/../../../../driverlib/ccs-cm4f/Debug/driverlib-cm4f.lib" -l"libc.a" "../lm4f120h5qr.cmd" 

@@ -1,0 +1,1 @@
+"../gpio.c" "../main.c" "../mi_driver_I2C.c" "../uartstdio.c" 

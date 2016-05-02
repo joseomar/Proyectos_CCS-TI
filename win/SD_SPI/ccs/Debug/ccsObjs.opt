@@ -1,0 +1,1 @@
+"./mmc_ssp.obj" "./main.obj" "./ff.obj" -l"C:/StellarisWare/boards/Mi_carpetita/SD_SPI/ccs/../../../../driverlib/ccs-cm4f/Debug/driverlib-cm4f.lib" -l"C:\StellarisWare\boards\Mi_carpetita\SD_SPI\ccs\Debug\ff.obj" -l"libc.a" "../lm4f120h5qr.cmd" 

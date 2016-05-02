@@ -1,0 +1,52 @@
+graph: {
+title: "TITLE"
+color: lightgray
+classname 1 : "Interne" classname 2 : "Externe"
+node: { title: "1" label: "main" info1: "1" info2: " int ()" info3: "testcelt.c:46" }
+node: { title: "2" label: "fprintf" info1: "2" info2: "" info3: ":0" }
+edge: { sourcename: "1" targetname: "2" class: 2 }
+node: { title: "3" label: "atoi" info1: "3" info2: "" info3: ":0" }
+edge: { sourcename: "1" targetname: "3" class: 2 }
+node: { title: "4" label: "celt_mode_create" info1: "4" info2: "" info3: ":0" }
+edge: { sourcename: "1" targetname: "4" class: 2 }
+node: { title: "5" label: "celt_mode_info" info1: "5" info2: "" info3: ":0" }
+edge: { sourcename: "1" targetname: "5" class: 2 }
+node: { title: "6" label: "fopen" info1: "6" info2: "" info3: ":0" }
+edge: { sourcename: "1" targetname: "6" class: 2 }
+node: { title: "7" label: "celt_encoder_create" info1: "7" info2: "" info3: ":0" }
+edge: { sourcename: "1" targetname: "7" class: 2 }
+node: { title: "8" label: "celt_strerror" info1: "8" info2: "" info3: ":0" }
+edge: { sourcename: "1" targetname: "8" class: 2 }
+node: { title: "9" label: "celt_decoder_create" info1: "9" info2: "" info3: ":0" }
+edge: { sourcename: "1" targetname: "9" class: 2 }
+node: { title: "10" label: "celt_encoder_ctl" info1: "10" info2: "" info3: ":0" }
+edge: { sourcename: "1" targetname: "10" class: 2 }
+node: { title: "11" label: "CELT_SET_COMPLEXITY" info1: "11" info2: "" info3: ":0" }
+edge: { sourcename: "1" targetname: "11" class: 2 }
+node: { title: "12" label: "malloc" info1: "12" info2: "" info3: ":0" }
+edge: { sourcename: "1" targetname: "12" class: 2 }
+node: { title: "13" label: "feof" info1: "13" info2: "" info3: ":0" }
+edge: { sourcename: "1" targetname: "13" class: 2 }
+node: { title: "14" label: "fread" info1: "14" info2: "" info3: ":0" }
+edge: { sourcename: "1" targetname: "14" class: 2 }
+node: { title: "15" label: "rand" info1: "15" info2: "" info3: ":0" }
+edge: { sourcename: "1" targetname: "15" class: 2 }
+node: { title: "16" label: "celt_decode" info1: "16" info2: "" info3: ":0" }
+edge: { sourcename: "1" targetname: "16" class: 2 }
+node: { title: "17" label: "fwrite" info1: "17" info2: "" info3: ":0" }
+edge: { sourcename: "1" targetname: "17" class: 2 }
+node: { title: "18" label: "PRINT_MIPS" info1: "18" info2: "" info3: ":0" }
+edge: { sourcename: "1" targetname: "18" class: 2 }
+node: { title: "19" label: "celt_encoder_destroy" info1: "19" info2: "" info3: ":0" }
+edge: { sourcename: "1" targetname: "19" class: 2 }
+node: { title: "20" label: "celt_decoder_destroy" info1: "20" info2: "" info3: ":0" }
+edge: { sourcename: "1" targetname: "20" class: 2 }
+node: { title: "21" label: "fclose" info1: "21" info2: "" info3: ":0" }
+edge: { sourcename: "1" targetname: "21" class: 2 }
+node: { title: "22" label: "sqrt" info1: "22" info2: "" info3: ":0" }
+edge: { sourcename: "1" targetname: "22" class: 2 }
+node: { title: "23" label: "celt_mode_destroy" info1: "23" info2: "" info3: ":0" }
+edge: { sourcename: "1" targetname: "23" class: 2 }
+node: { title: "24" label: "free" info1: "24" info2: "" info3: ":0" }
+edge: { sourcename: "1" targetname: "24" class: 2 }
+}

@@ -1,0 +1,374 @@
+******************************************************************************
+                  TMS470 Linker Unix v4.9.5                    
+******************************************************************************
+>> Linked Wed May 28 11:25:20 2014
+
+OUTPUT FILE NAME:   <IMU_100HZ.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 00003e79
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  FLASH                 00000000   00040000  00004474  0003bb8c  R  X
+  SRAM                  20000000   00008000  00000e80  00007180  RW X
+
+
+SEGMENT ALLOCATION MAP
+
+run origin  load origin   length   init length attrs members
+----------  ----------- ---------- ----------- ----- -------
+00000000    00000000    00004478   00004478    r-x
+  00000000    00000000    0000026c   0000026c    r-- .intvecs
+  0000026c    0000026c    00003f20   00003f20    r-x .text
+  0000418c    0000418c    000002b0   000002b0    r-- .const
+  00004440    00004440    00000038   00000038    r-- .cinit
+20000000    20000000    00000e6a   00000000    rw-
+  20000000    20000000    00000800   00000000    rw- .stack
+  20000800    20000800    0000066a   00000000    rw- .bss
+20000e6c    20000e6c    00000016   00000016    rw-
+  20000e6c    20000e6c    00000016   00000016    rw- .data
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.intvecs   0    00000000    0000026c     
+                  00000000    0000026c     startup_ccs.obj (.intvecs)
+
+.text      0    0000026c    00003f20     
+                  0000026c    00002964     ff.obj (.text)
+                  00002bd0    000009d4     diskio.obj (.text)
+                  000035a4    00000218     main.obj (.text)
+                  000037bc    000001d8     driverlib-cm4f.lib : sysctl.obj (.text:SysCtlClockGet)
+                  00003994    0000013c                        : sysctl.obj (.text:SysCtlClockSet)
+                  00003ad0    000000c8                        : gpio.obj (.text:GPIOPadConfigSet)
+                  00003b98    0000009c     rtsv7M4_T_le_v4SPD16_eabi.lib : memcpy_t2.obj (.text)
+                  00003c34    00000094                                   : auto_init.obj (.text)
+                  00003cc8    00000064     driverlib-cm4f.lib : interrupt.obj (.text:IntEnable)
+                  00003d2c    0000005e     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_rle.obj (.text)
+                  00003d8a    00000002     --HOLE-- [fill = 0]
+                  00003d8c    00000058     driverlib-cm4f.lib : sysctl.obj (.text:SysCtlPeripheralEnable)
+                  00003de4    0000004c     rtsv7M4_T_le_v4SPD16_eabi.lib : cpy_tbl.obj (.text)
+                  00003e30    00000048     driverlib-cm4f.lib : gpio.obj (.text:GPIOPinConfigure)
+                  00003e78    00000048     rtsv7M4_T_le_v4SPD16_eabi.lib : boot.obj (.text)
+                  00003ec0    00000044     driverlib-cm4f.lib : ssi.obj (.text:SSIConfigSetExpClk)
+                  00003f04    00000044     rtsv7M4_T_le_v4SPD16_eabi.lib : exit.obj (.text)
+                  00003f48    00000042     driverlib-cm4f.lib : uart.obj (.text:UARTConfigSetExpClk)
+                  00003f8a    0000002e                        : gpio.obj (.text:GPIODirModeSet)
+                  00003fb8    00000028                        : timer.obj (.text:TimerConfigure)
+                  00003fe0    00000024                        : interrupt.obj (.text:IntPrioritySet)
+                  00004004    0000001c                        : uart.obj (.text:UARTDisable)
+                  00004020    00000018     rtsv7M4_T_le_v4SPD16_eabi.lib : _lock.obj (.text)
+                  00004038    00000018                                   : args_main.obj (.text)
+                  00004050    00000014     driverlib-cm4f.lib : fpu.obj (.text:FPUStackingEnable)
+                  00004064    00000014                        : uart.obj (.text:UARTEnable)
+                  00004078    00000012                        : gpio.obj (.text:GPIOPinTypeGPIOOutput)
+                  0000408a    00000012                        : gpio.obj (.text:GPIOPinTypeSSI)
+                  0000409c    00000012                        : gpio.obj (.text:GPIOPinTypeUART)
+                  000040ae    00000012                        : timer.obj (.text:TimerLoadSet)
+                  000040c0    00000012     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_zero_init.obj (.text:decompress:ZI)
+                  000040d2    00000002     --HOLE-- [fill = 0]
+                  000040d4    00000010     driverlib-cm4f.lib : fpu.obj (.text:FPUEnable)
+                  000040e4    0000000e                        : timer.obj (.text:TimerEnable)
+                  000040f2    0000000e     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_none.obj (.text:decompress:none)
+                  00004100    0000000c     driverlib-cm4f.lib : cpu.obj (.text:CPUcpsie)
+                  0000410c    0000000c                        : ssi.obj (.text:SSIDataGet)
+                  00004118    0000000c     startup_ccs.obj (.text)
+                  00004124    0000000a     driverlib-cm4f.lib : gpio.obj (.text:GPIOPinRead)
+                  0000412e    0000000a                        : gpio.obj (.text:GPIOPinWrite)
+                  00004138    0000000a                        : interrupt.obj (.text:IntMasterEnable)
+                  00004142    0000000a                        : ssi.obj (.text:SSIDataPut)
+                  0000414c    0000000a                        : ssi.obj (.text:SSIDisable)
+                  00004156    0000000a                        : ssi.obj (.text:SSIEnable)
+                  00004160    0000000a                        : uart.obj (.text:UARTCharGet)
+                  0000416a    0000000a                        : uart.obj (.text:UARTCharPut)
+                  00004174    00000008                        : timer.obj (.text:TimerIntEnable)
+                  0000417c    00000006                        : sysctl.obj (.text:SysCtlDelay)
+                  00004182    00000006     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_rle.obj (.text:decompress:rle24)
+                  00004188    00000004     driverlib-cm4f.lib : timer.obj (.text:TimerIntClear)
+
+.const     0    0000418c    000002b0     
+                  0000418c    0000009c     driverlib-cm4f.lib : interrupt.obj (.const:g_pulRegs)
+                  00004228    00000080     ff.obj (.const:excvt$1)
+                  000042a8    00000078     driverlib-cm4f.lib : gpio.obj (.const:g_pulGPIOBaseAddrs)
+                  00004320    00000070                        : interrupt.obj (.const)
+                  00004390    0000006c                        : sysctl.obj (.const:g_pulXtals)
+                  000043fc    00000040                        : sysctl.obj (.const)
+
+.cinit     0    00004440    00000038     
+                  00004440    00000011     (.cinit..data.load) [load image, compression = rle]
+                  00004451    00000003     --HOLE-- [fill = 0]
+                  00004454    0000000c     (__TI_handler_table)
+                  00004460    00000008     (.cinit..bss.load) [load image, compression = zero_init]
+                  00004468    00000010     (__TI_cinit_table)
+
+.stack     0    20000000    00000800     UNINITIALIZED
+                  20000000    00000800     --HOLE--
+
+.bss       0    20000800    0000066a     UNINITIALIZED
+                  20000800    00000230     main.obj (.bss:Fatfs)
+                  20000a30    00000224     main.obj (.bss:Fil)
+                  20000c54    000001f4     main.obj (.bss:BuffYEI)
+                  20000e48    00000010     main.obj (.bss)
+                  20000e58    00000009     diskio.obj (.bss)
+                  20000e61    00000003     --HOLE--
+                  20000e64    00000006     ff.obj (.bss)
+
+.data      0    20000e6c    00000016     
+                  20000e6c    00000008     rtsv7M4_T_le_v4SPD16_eabi.lib : _lock.obj (.data)
+                  20000e74    00000008                                   : exit.obj (.data)
+                  20000e7c    00000004                                   : stkdepth_vars.obj (.data)
+                  20000e80    00000002     diskio.obj (.data)
+
+
+LINKER GENERATED COPY TABLES
+
+__TI_cinit_table @ 00004468 records: 2, size/record: 8, table size: 16
+	.data: load addr=00004440, load size=00000011 bytes, run addr=20000e6c, run size=00000016 bytes, compression=rle
+	.bss: load addr=00004460, load size=00000008 bytes, run addr=20000800, run size=0000066a bytes, compression=zero_init
+
+
+LINKER GENERATED HANDLER TABLE
+
+__TI_handler_table @ 00004454 records: 3, size/record: 4, table size: 12
+	index: 0, handler: __TI_decompress_rle24
+	index: 1, handler: __TI_decompress_none
+	index: 2, handler: __TI_zero_init
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+20000c54   BuffYEI
+00003f05   C$$EXIT
+00004101   CPUcpsie
+000040d5   FPUEnable
+00004051   FPUStackingEnable
+20000800   Fatfs
+20000a30   Fil
+00003f8b   GPIODirModeSet
+00003ad1   GPIOPadConfigSet
+00003e31   GPIOPinConfigure
+00004125   GPIOPinRead
+00004079   GPIOPinTypeGPIOOutput
+0000408b   GPIOPinTypeSSI
+0000409d   GPIOPinTypeUART
+0000412f   GPIOPinWrite
+00003cc9   IntEnable
+00004139   IntMasterEnable
+00003fe1   IntPrioritySet
+00004119   ResetISR
+00002bd1   SELECT
+UNDEFED    SHT$$INIT_ARRAY$$Base
+UNDEFED    SHT$$INIT_ARRAY$$Limit
+00003ec1   SSIConfigSetExpClk
+0000410d   SSIDataGet
+00004143   SSIDataPut
+0000414d   SSIDisable
+00004157   SSIEnable
+000037bd   SysCtlClockGet
+00003995   SysCtlClockSet
+0000417d   SysCtlDelay
+00003d8d   SysCtlPeripheralEnable
+00003667   Timer0IntHandler
+00003fb9   TimerConfigure
+000040e5   TimerEnable
+00004189   TimerIntClear
+00004175   TimerIntEnable
+000040af   TimerLoadSet
+00004161   UARTCharGet
+0000416b   UARTCharPut
+00003f49   UARTConfigSetExpClk
+00004005   UARTDisable
+00004065   UARTEnable
+20000800   __STACK_END
+00000800   __STACK_SIZE
+20000100   __STACK_TOP
+00004468   __TI_CINIT_Base
+00004478   __TI_CINIT_Limit
+00004454   __TI_Handler_Table_Base
+00004460   __TI_Handler_Table_Limit
+00000001   __TI_args_main
+00003c35   __TI_auto_init
+000040f3   __TI_decompress_none
+00004183   __TI_decompress_rle24
+00000000   __TI_static_base__
+000040c1   __TI_zero_init
+00003b99   __aeabi_memcpy
+00003b99   __aeabi_memcpy4
+00003b99   __aeabi_memcpy8
+ffffffff   __binit__
+ffffffff   __c_args__
+20000000   __stack
+00004039   _args_main
+00003e79   _c_int00
+20000e74   _cleanup_ptr
+20000e78   _dtors_ptr
+20000e6c   _lock
+0000402d   _nop
+00004027   _register_lock
+00004021   _register_unlock
+20000e70   _unlock
+00003f09   abort
+ffffffff   binit
+20000e48   bw
+20000e4c   bwYEI
+20000e51   cThisChar
+00000503   clust2sect
+00003de5   copy_in
+00002f91   disk_initialize
+00003349   disk_ioctl
+000031a5   disk_read
+00003183   disk_status
+00003551   disk_timerproc
+00003261   disk_write
+00003f11   exit
+00002963   f_chmod
+00002023   f_close
+0000241b   f_getfree
+00002043   f_lseek
+00002779   f_mkdir
+000017bd   f_mount
+00001811   f_open
+00002291   f_opendir
+00001a29   f_read
+00002341   f_readdir
+00002a79   f_rename
+000023cb   f_stat
+00001f23   f_sync
+0000257d   f_truncate
+00002679   f_unlink
+000029f3   f_utime
+00001c7f   f_write
+00000000   g_pfnVectors
+00000533   get_fat
+00003595   get_fattime
+000035a5   main
+20000e7c   main_func_sp
+00003b99   memcpy
+00000657   put_fat
+20000e50   rc
+20000e54   valor_timer
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000000   __TI_static_base__
+00000000   g_pfnVectors
+00000001   __TI_args_main
+00000503   clust2sect
+00000533   get_fat
+00000657   put_fat
+00000800   __STACK_SIZE
+000017bd   f_mount
+00001811   f_open
+00001a29   f_read
+00001c7f   f_write
+00001f23   f_sync
+00002023   f_close
+00002043   f_lseek
+00002291   f_opendir
+00002341   f_readdir
+000023cb   f_stat
+0000241b   f_getfree
+0000257d   f_truncate
+00002679   f_unlink
+00002779   f_mkdir
+00002963   f_chmod
+000029f3   f_utime
+00002a79   f_rename
+00002bd1   SELECT
+00002f91   disk_initialize
+00003183   disk_status
+000031a5   disk_read
+00003261   disk_write
+00003349   disk_ioctl
+00003551   disk_timerproc
+00003595   get_fattime
+000035a5   main
+00003667   Timer0IntHandler
+000037bd   SysCtlClockGet
+00003995   SysCtlClockSet
+00003ad1   GPIOPadConfigSet
+00003b99   __aeabi_memcpy
+00003b99   __aeabi_memcpy4
+00003b99   __aeabi_memcpy8
+00003b99   memcpy
+00003c35   __TI_auto_init
+00003cc9   IntEnable
+00003d8d   SysCtlPeripheralEnable
+00003de5   copy_in
+00003e31   GPIOPinConfigure
+00003e79   _c_int00
+00003ec1   SSIConfigSetExpClk
+00003f05   C$$EXIT
+00003f09   abort
+00003f11   exit
+00003f49   UARTConfigSetExpClk
+00003f8b   GPIODirModeSet
+00003fb9   TimerConfigure
+00003fe1   IntPrioritySet
+00004005   UARTDisable
+00004021   _register_unlock
+00004027   _register_lock
+0000402d   _nop
+00004039   _args_main
+00004051   FPUStackingEnable
+00004065   UARTEnable
+00004079   GPIOPinTypeGPIOOutput
+0000408b   GPIOPinTypeSSI
+0000409d   GPIOPinTypeUART
+000040af   TimerLoadSet
+000040c1   __TI_zero_init
+000040d5   FPUEnable
+000040e5   TimerEnable
+000040f3   __TI_decompress_none
+00004101   CPUcpsie
+0000410d   SSIDataGet
+00004119   ResetISR
+00004125   GPIOPinRead
+0000412f   GPIOPinWrite
+00004139   IntMasterEnable
+00004143   SSIDataPut
+0000414d   SSIDisable
+00004157   SSIEnable
+00004161   UARTCharGet
+0000416b   UARTCharPut
+00004175   TimerIntEnable
+0000417d   SysCtlDelay
+00004183   __TI_decompress_rle24
+00004189   TimerIntClear
+00004454   __TI_Handler_Table_Base
+00004460   __TI_Handler_Table_Limit
+00004468   __TI_CINIT_Base
+00004478   __TI_CINIT_Limit
+20000000   __stack
+20000100   __STACK_TOP
+20000800   Fatfs
+20000800   __STACK_END
+20000a30   Fil
+20000c54   BuffYEI
+20000e48   bw
+20000e4c   bwYEI
+20000e50   rc
+20000e51   cThisChar
+20000e54   valor_timer
+20000e6c   _lock
+20000e70   _unlock
+20000e74   _cleanup_ptr
+20000e78   _dtors_ptr
+20000e7c   main_func_sp
+ffffffff   __binit__
+ffffffff   __c_args__
+ffffffff   binit
+UNDEFED    SHT$$INIT_ARRAY$$Base
+UNDEFED    SHT$$INIT_ARRAY$$Limit
+
+[110 symbols]

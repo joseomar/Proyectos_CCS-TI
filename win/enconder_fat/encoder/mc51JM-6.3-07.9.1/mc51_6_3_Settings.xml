@@ -1,0 +1,484 @@
+<PE_PROJECT_SETTINGS_DOCUMENTATION>
+  <PE_product_version v="version 3.07 for Freescale HC(S)08/RS08/CFV1"/>
+  <PE_core_version v="Processor Expert Version 0434"/>
+
+  <CPU_Bean name="Cpu" type="MCF51AC256A_80">
+    <Enabled v="Y"/>
+
+    <Properties>
+      <Component_name v="Cpu"/>
+      <CPU_type v="MCF51AC256ACLK"/>
+      <list name="Shared Internal properties" v="1">
+      </list>
+      <list name="Shared Clock settings" v="1">
+        <group name="Clock settings">
+          <group name="Internal clock">
+            <Internal_oscillator_frequency__kHz_ v="32.768000000000"/>
+            <Internal_ref__clock_for_peripherals v="Disabled"/>
+            <boolgroup name="Initialize trim value" v="no" />
+          </group>
+          <boolgroup name="External clock" v="Disabled" />
+          <group name="Low-power modes settings">
+            <boolgroup name="STOP instruction enabled" v="no" />
+            <boolgroup name="Force exit on interrupt" v="Enabled">
+              <Wakeup_interrupt_level v="0"/>
+            </boolgroup>
+          </group>
+        </group>
+      </list>
+      <list name="Shared Internal resource mapping" v="1">
+        <group name="Internal resource mapping">
+          <group name="Exception vector table">
+            <Fetch_vectors_from_RAM v="no"/>
+            <Address v="0"/>
+            <Size v="1020"/>
+          </group>
+        </group>
+      </list>
+      <Initialization_priority v="minimal priority"/>
+      <group name="Internal peripherals">
+        <list name="Shared ADC settings" v="1">
+          <group name="ADC">
+            <Internal_bandgap_buffer v="Disabled"/>
+          </group>
+        </list>
+        <list name="Shared BDM settings" v="1">
+          <group name="BDM pin support">
+            <BDM_pin v="BKGD_MS"/>
+            <BDM_pin_signal v=""/>
+          </group>
+        </list>
+        <list name="Shared Bus clock output settings" v="1">
+          <boolgroup name="Bus clock output" v="Disabled" />
+        </list>
+        <list name="SharedCPUConfigGrp" v="1">
+          <group name="CPU configuration">
+            <Interrupt_mask v="Disabled"/>
+            <Interrupt_acknowledge__IACK_ v="Disabled"/>
+            <Buffered_peripheral_bus_write v="Enabled"/>
+            <Flash_speculation v="Enabled"/>
+          </group>
+        </list>
+        <list name="Shared FLASH settings" v="1">
+          <group name="FLASH">
+            <enumgroup name="Security state" v="Disabled">
+            </enumgroup>
+            <enumgroup name="Protection" v="Disabled">
+            </enumgroup>
+          </group>
+        </list>
+        <list name="Included IO settings" v="1">
+          <group name="I/O module">
+            <list name="Shared Unused I/O" v="1">
+              <enumgroup name="Initialize unused I/O pins" v="no initialization">
+              </enumgroup>
+            </list>
+            <group name="PORT A">
+              <Slew_rate_control_for_PTA0 v="no"/>
+              <Slew_rate_control_for_PTA1 v="no"/>
+              <Slew_rate_control_for_PTA2 v="no"/>
+              <Slew_rate_control_for_PTA3 v="no"/>
+              <Slew_rate_control_for_PTA4 v="no"/>
+              <Slew_rate_control_for_PTA5 v="no"/>
+              <Slew_rate_control_for_PTA6 v="no"/>
+              <Slew_rate_control_for_PTA7 v="no"/>
+              <Drive_strength_for_PTA0 v="Low"/>
+              <Drive_strength_for_PTA1 v="Low"/>
+              <Drive_strength_for_PTA2 v="Low"/>
+              <Drive_strength_for_PTA3 v="Low"/>
+              <Drive_strength_for_PTA4 v="Low"/>
+              <Drive_strength_for_PTA5 v="Low"/>
+              <Drive_strength_for_PTA6 v="Low"/>
+              <Drive_strength_for_PTA7 v="Low"/>
+            </group>
+            <group name="PORT B">
+              <Slew_rate_control_for_PTB0 v="no"/>
+              <Slew_rate_control_for_PTB1 v="no"/>
+              <Slew_rate_control_for_PTB2 v="no"/>
+              <Slew_rate_control_for_PTB3 v="no"/>
+              <Slew_rate_control_for_PTB4 v="no"/>
+              <Slew_rate_control_for_PTB5 v="no"/>
+              <Slew_rate_control_for_PTB6 v="no"/>
+              <Slew_rate_control_for_PTB7 v="no"/>
+              <Drive_strength_for_PTB0 v="Low"/>
+              <Drive_strength_for_PTB1 v="Low"/>
+              <Drive_strength_for_PTB2 v="Low"/>
+              <Drive_strength_for_PTB3 v="Low"/>
+              <Drive_strength_for_PTB4 v="Low"/>
+              <Drive_strength_for_PTB5 v="Low"/>
+              <Drive_strength_for_PTB6 v="Low"/>
+              <Drive_strength_for_PTB7 v="Low"/>
+            </group>
+            <group name="PORT C">
+              <Slew_rate_control_for_PTC0 v="no"/>
+              <Slew_rate_control_for_PTC1 v="no"/>
+              <Slew_rate_control_for_PTC2 v="no"/>
+              <Slew_rate_control_for_PTC3 v="no"/>
+              <Slew_rate_control_for_PTC4 v="no"/>
+              <Slew_rate_control_for_PTC5 v="no"/>
+              <Slew_rate_control_for_PTC6 v="no"/>
+              <Drive_strength_for_PTC0 v="Low"/>
+              <Drive_strength_for_PTC1 v="Low"/>
+              <Drive_strength_for_PTC2 v="Low"/>
+              <Drive_strength_for_PTC3 v="Low"/>
+              <Drive_strength_for_PTC4 v="Low"/>
+              <Drive_strength_for_PTC5 v="Low"/>
+              <Drive_strength_for_PTC6 v="Low"/>
+            </group>
+            <group name="PORT D">
+              <Slew_rate_control_for_PTD0 v="no"/>
+              <Slew_rate_control_for_PTD1 v="no"/>
+              <Slew_rate_control_for_PTD2 v="no"/>
+              <Slew_rate_control_for_PTD3 v="no"/>
+              <Slew_rate_control_for_PTD4 v="no"/>
+              <Slew_rate_control_for_PTD5 v="no"/>
+              <Slew_rate_control_for_PTD6 v="no"/>
+              <Slew_rate_control_for_PTD7 v="no"/>
+              <Drive_strength_for_PTD0 v="Low"/>
+              <Drive_strength_for_PTD1 v="Low"/>
+              <Drive_strength_for_PTD2 v="Low"/>
+              <Drive_strength_for_PTD3 v="Low"/>
+              <Drive_strength_for_PTD4 v="Low"/>
+              <Drive_strength_for_PTD5 v="Low"/>
+              <Drive_strength_for_PTD6 v="Low"/>
+              <Drive_strength_for_PTD7 v="Low"/>
+            </group>
+            <group name="PORT E">
+              <Slew_rate_control_for_PTE0 v="no"/>
+              <Slew_rate_control_for_PTE1 v="no"/>
+              <Slew_rate_control_for_PTE2 v="no"/>
+              <Slew_rate_control_for_PTE3 v="no"/>
+              <Slew_rate_control_for_PTE4 v="no"/>
+              <Slew_rate_control_for_PTE5 v="no"/>
+              <Slew_rate_control_for_PTE6 v="no"/>
+              <Slew_rate_control_for_PTE7 v="no"/>
+              <Drive_strength_for_PTE0 v="Low"/>
+              <Drive_strength_for_PTE1 v="Low"/>
+              <Drive_strength_for_PTE2 v="Low"/>
+              <Drive_strength_for_PTE3 v="Low"/>
+              <Drive_strength_for_PTE4 v="Low"/>
+              <Drive_strength_for_PTE5 v="Low"/>
+              <Drive_strength_for_PTE6 v="Low"/>
+              <Drive_strength_for_PTE7 v="Low"/>
+            </group>
+            <group name="PORT F">
+              <Slew_rate_control_for_PTF0 v="no"/>
+              <Slew_rate_control_for_PTF1 v="no"/>
+              <Slew_rate_control_for_PTF2 v="no"/>
+              <Slew_rate_control_for_PTF3 v="no"/>
+              <Slew_rate_control_for_PTF4 v="no"/>
+              <Slew_rate_control_for_PTF5 v="no"/>
+              <Slew_rate_control_for_PTF6 v="no"/>
+              <Slew_rate_control_for_PTF7 v="no"/>
+              <Drive_strength_for_PTF0 v="Low"/>
+              <Drive_strength_for_PTF1 v="Low"/>
+              <Drive_strength_for_PTF2 v="Low"/>
+              <Drive_strength_for_PTF3 v="Low"/>
+              <Drive_strength_for_PTF4 v="Low"/>
+              <Drive_strength_for_PTF5 v="Low"/>
+              <Drive_strength_for_PTF6 v="Low"/>
+              <Drive_strength_for_PTF7 v="Low"/>
+            </group>
+            <group name="PORT G">
+              <Slew_rate_control_for_PTG0 v="no"/>
+              <Slew_rate_control_for_PTG1 v="no"/>
+              <Slew_rate_control_for_PTG2 v="no"/>
+              <Slew_rate_control_for_PTG3 v="no"/>
+              <Slew_rate_control_for_PTG4 v="no"/>
+              <Slew_rate_control_for_PTG5 v="no"/>
+              <Slew_rate_control_for_PTG6 v="no"/>
+              <Drive_strength_for_PTG0 v="Low"/>
+              <Drive_strength_for_PTG1 v="Low"/>
+              <Drive_strength_for_PTG2 v="Low"/>
+              <Drive_strength_for_PTG3 v="Low"/>
+              <Drive_strength_for_PTG4 v="Low"/>
+              <Drive_strength_for_PTG5 v="Low"/>
+              <Drive_strength_for_PTG6 v="Low"/>
+            </group>
+            <group name="PORT H">
+              <Slew_rate_control_for_PTH0 v="no"/>
+              <Slew_rate_control_for_PTH1 v="no"/>
+              <Slew_rate_control_for_PTH2 v="no"/>
+              <Slew_rate_control_for_PTH3 v="no"/>
+              <Slew_rate_control_for_PTH4 v="no"/>
+              <Slew_rate_control_for_PTH5 v="no"/>
+              <Slew_rate_control_for_PTH6 v="no"/>
+              <Drive_strength_for_PTH0 v="Low"/>
+              <Drive_strength_for_PTH1 v="Low"/>
+              <Drive_strength_for_PTH2 v="Low"/>
+              <Drive_strength_for_PTH3 v="Low"/>
+              <Drive_strength_for_PTH4 v="Low"/>
+              <Drive_strength_for_PTH5 v="Low"/>
+              <Drive_strength_for_PTH6 v="Low"/>
+            </group>
+            <group name="PORT J">
+              <Slew_rate_control_for_PTJ0 v="no"/>
+              <Slew_rate_control_for_PTJ1 v="no"/>
+              <Slew_rate_control_for_PTJ2 v="no"/>
+              <Slew_rate_control_for_PTJ3 v="no"/>
+              <Slew_rate_control_for_PTJ4 v="no"/>
+              <Slew_rate_control_for_PTJ5 v="no"/>
+              <Slew_rate_control_for_PTJ6 v="no"/>
+              <Slew_rate_control_for_PTJ7 v="no"/>
+              <Drive_strength_for_PTJ0 v="Low"/>
+              <Drive_strength_for_PTJ1 v="Low"/>
+              <Drive_strength_for_PTJ2 v="Low"/>
+              <Drive_strength_for_PTJ3 v="Low"/>
+              <Drive_strength_for_PTJ4 v="Low"/>
+              <Drive_strength_for_PTJ5 v="Low"/>
+              <Drive_strength_for_PTJ6 v="Low"/>
+              <Drive_strength_for_PTJ7 v="Low"/>
+            </group>
+          </group>
+        </list>
+        <list name="SharedClockGatingGrp" v="1">
+          <group name="System Clock Gating">
+            <SCI1_Clock_Gate v="Enabled"/>
+            <SCI2_Clock_Gate v="Enabled"/>
+            <IIC_Clock_Gate v="Enabled"/>
+            <CAN_Clock_Gate v="Enabled"/>
+            <ADC_Clock_Gate v="Enabled"/>
+            <FTM1_Clock_Gate v="Enabled"/>
+            <FTM2_Clock_Gate v="Enabled"/>
+            <TPM3_Clock_Gate v="Enabled"/>
+            <SPI1_Clock_Gate v="Enabled"/>
+            <SPI2_Clock_Gate v="Enabled"/>
+            <RTI_Clock_Gate v="Enabled"/>
+            <ACMP_Clock_Gate v="Enabled"/>
+            <KBI_Clock_Gate v="Enabled"/>
+            <IRQ_Clock_Gate v="Enabled"/>
+            <FLASH_Register_Clock_Gate v="Enabled"/>
+            <CRC_Clock_Gate v="Enabled"/>
+          </group>
+        </list>
+        <list name="Shared LVD settings" v="1">
+          <boolgroup name="LVD module" v="Enabled">
+            <enumgroup name="LVD operation" v="Reset">
+            </enumgroup>
+            <Enable_in_stop_mode v="yes"/>
+            <Low_voltage_detect_voltage v="Low trip point"/>
+            <Low_voltage_warning_voltage v="Low trip point"/>
+          </boolgroup>
+        </list>
+        <list name="Shared TMP modules setting" v="1">
+        </list>
+        <list name="Shared Reset pin setting" v="1">
+          <group name="Reset pin ">
+            <Reset_pin v="RESET"/>
+            <Reset_pin_signal v=""/>
+          </group>
+        </list>
+      </group>
+      <list name="Shared CPU interrupts/resets" v="1">
+        <group name="CPU interrupts/resets">
+          <group name="Instruction related exceptions">
+            <Instruction_related_reset v="Enabled"/>
+            <boolgroup name="Illegal Instruction Exception" v="Disabled" />
+            <boolgroup name="Unimplemented Line-A Opcode" v="Disabled" />
+            <boolgroup name="Unimplemented Line-F Opcode" v="Disabled" />
+            <boolgroup name="Privilege Violation" v="Disabled" />
+          </group>
+          <group name="Address related exceptions">
+            <Address_related_reset v="Enabled"/>
+            <boolgroup name="Access Error Exception" v="Disabled" />
+            <boolgroup name="Address Error Exception" v="Disabled" />
+            <boolgroup name="RTE Format Error Exception" v="Disabled" />
+          </group>
+          <boolgroup name="Unsupported Instruction" v="Disabled" />
+          <list name="Trap exceptions" v="16">
+            <boolgroup name="Trap 0" v="Disabled" />
+            <boolgroup name="Trap 1" v="Disabled" />
+            <boolgroup name="Trap 2" v="Disabled" />
+            <boolgroup name="Trap 3" v="Disabled" />
+            <boolgroup name="Trap 4" v="Disabled" />
+            <boolgroup name="Trap 5" v="Disabled" />
+            <boolgroup name="Trap 6" v="Disabled" />
+            <boolgroup name="Trap 7" v="Disabled" />
+            <boolgroup name="Trap 8" v="Disabled" />
+            <boolgroup name="Trap 9" v="Disabled" />
+            <boolgroup name="Trap 10" v="Disabled" />
+            <boolgroup name="Trap 11" v="Disabled" />
+            <boolgroup name="Trap 12" v="Disabled" />
+            <boolgroup name="Trap 13" v="Disabled" />
+            <boolgroup name="Trap 14" v="Disabled" />
+            <boolgroup name="Trap 15" v="Disabled" />
+          </list>
+          <list name="Software Interrupts" v="7">
+            <boolgroup name="Software Interrupt Level 1" v="Disabled" />
+            <boolgroup name="Software Interrupt Level 2" v="Disabled" />
+            <boolgroup name="Software Interrupt Level 3" v="Disabled" />
+            <boolgroup name="Software Interrupt Level 4" v="Disabled" />
+            <boolgroup name="Software Interrupt Level 5" v="Disabled" />
+            <boolgroup name="Software Interrupt Level 6" v="Disabled" />
+            <boolgroup name="Software Interrupt Level 7" v="Disabled" />
+          </list>
+          <boolgroup name="Loss of lock" v="Disabled" />
+        </group>
+      </list>
+      <list name="Shared MCG speed mode settings" v="1">
+        <group name="Enabled speed modes">
+          <boolgroup name="High speed mode" v="Enabled">
+            <High_speed_clock v="Internal Clock"/>
+            <Bus_freq__divider v="Auto select"/>
+            <Internal_bus_clock v="4.194304000000"/>
+            <Fixed_frequency_clock__MHz_ v="0.016384"/>
+            <Clock_monitor v="Disabled"/>
+            <enumgroup name="FLL/PLL mode" v="FLL Engaged">
+              <Loss_of_lock_interrupt v="Disabled"/>
+              <enumgroup name="Ref. clock source" v="Internal Clock">
+                <Ref__clock_freq___MHz_ v="0.032768000000"/>
+              </enumgroup>
+              <enumgroup name="DCO mode" v="Auto select">
+              </enumgroup>
+              <FLL_output_clock_freq___MHz_ v="16.777216000000"/>
+            </enumgroup>
+          </boolgroup>
+          <boolgroup name="Low speed mode" v="Disabled" />
+          <boolgroup name="Slow speed mode" v="Disabled" />
+        </group>
+      </list>
+    </Properties>
+
+    <Methods>
+      <list name="SharedCpuMethods" v="1">
+        <SetHighSpeed v="don&apos;t generate code"/>
+        <SetLowSpeed v="don&apos;t generate code"/>
+        <SetSlowSpeed v="don&apos;t generate code"/>
+        <GetSpeedMode v="don&apos;t generate code"/>
+        <EnableInt v="generate code"/>
+        <DisableInt v="generate code"/>
+        <SetILM v="don&apos;t generate code"/>
+        <GetResetSource v="don&apos;t generate code"/>
+        <SetWaitMode v="don&apos;t generate code"/>
+        <SetStopMode v="don&apos;t generate code"/>
+        <GetLowVoltageFlag v="don&apos;t generate code"/>
+        <ClearLowVoltageFlag v="don&apos;t generate code"/>
+        <GetLowVoltageWarningFlag v="don&apos;t generate code"/>
+        <ClearLowVoltageWarningFlag v="don&apos;t generate code"/>
+        <GetPartialPowerDownFlag v="don&apos;t generate code"/>
+        <ClearPartialPowerDownFlag v="don&apos;t generate code"/>
+        <GetIdentification v="don&apos;t generate code"/>
+        <SetBackdoorKey v="don&apos;t generate code"/>
+        <Delay100US v="don&apos;t generate code"/>
+      </list>
+    </Methods>
+
+    <Events>
+      <Event_module_name v="Events"/>
+      <list name="ColdFireV1EvntGrp" v="1">
+        <event name="OnAddrRelatedEXP" v="don&apos;t generate code" />
+        <event name="OnInstrRelatedEXP" v="don&apos;t generate code" />
+        <event name="OnTrapEXP" v="don&apos;t generate code" />
+        <event name="OnUnsupportedInstEXP" v="don&apos;t generate code" />
+        <event name="OnSwINT" v="don&apos;t generate code" />
+      </list>
+      <list name="CommonEventsGrp" v="1">
+        <event name="OnReset" v="don&apos;t generate code" />
+        <event name="OnLvdINT" v="don&apos;t generate code" />
+        <event name="OnLossOfLockINT" v="don&apos;t generate code" />
+      </list>
+    </Events>
+    <Compiler v="CodeWarrior ColdFireV1 C Compiler"/>
+
+    <CompilerProperties>
+      <Compiler v="CodeWarrior ColdFireV1 C Compiler"/>
+      <enumgroup name="Unhandled vectors" v="One handler for all">
+        <Unhandled_int_code>
+/* This code can be changed using the CPU bean property "Build Options / Unhandled int code" */
+/* asm (HALT) */
+        </Unhandled_int_code>
+      </enumgroup>
+      <Generate_macros v="yes"/>
+      <group name="User initialization">
+        <User_data_declarations>
+        </User_data_declarations>
+        <User_code_before_PE_initialization>
+        </User_code_before_PE_initialization>
+        <User_code_after_PE_initialization>
+        </User_code_after_PE_initialization>
+      </group>
+      <boolgroup name="Generate LCF file" v="no" />
+    </CompilerProperties>
+  </CPU_Bean>
+
+  <Bean name="SCI3" type="Init_SCI">
+    <Enabled v="Y"/>
+
+    <Properties>
+      <Component_name v="SCI3"/>
+      <Device v="SCI1"/>
+      <group name="Settings">
+        <group name="Clock settings">
+          <SCI1_Clock_Gate v="Enabled"/>
+          <Baud_rate_divisor v="4"/>
+          <Baud_rate v="65536 baud"/>
+        </group>
+        <Loop_mode v="Disabled"/>
+        <Receiver_source v="Loop mode"/>
+        <TxD_pin_direction v="Input"/>
+        <Data_Format v="8 bits"/>
+        <Stop_in_Wait_mode v="Disabled"/>
+        <Wake_up v="Idle line wakeup"/>
+        <Idle_character_counting v="After start bit"/>
+        <Receive_Wake_Up_Idle_Detect v="Don&apos;t set IDLE bit"/>
+        <Parity v="None"/>
+        <Send_break v="Disabled"/>
+        <Receiver_wakeup v="Normal operation"/>
+        <Break_character_generation_length v="10 or 11 bits"/>
+        <Transmitter_output v="Not inverted"/>
+        <Receiver_input v="Not inverted"/>
+        <LIN_Break_detection v="Disabled"/>
+      </group>
+      <group name="Pins">
+        <boolgroup name="RxD pin allocation" v="Enabled">
+          <RxD_pin v="PTE1_RGPIO1_RxD1"/>
+          <RxD_pin_signal v=""/>
+        </boolgroup>
+        <boolgroup name="TxD pin allocation" v="Enabled">
+          <TxD_pin v="PTE0_RGPIO0_TxD1"/>
+          <TxD_pin_signal v=""/>
+        </boolgroup>
+      </group>
+      <group name="Interrupts/DMA">
+        <group name="Tx interrupt">
+          <Interrupt v="Vsci1tx"/>
+          <Priority v="default"/>
+          <Transmit_request v="Disabled"/>
+          <Transmission_complete_interrupt v="Disabled"/>
+          <ISR_name v=""/>
+        </group>
+        <group name="Rx interrupt">
+          <Interrupt v="Vsci1rx"/>
+          <Priority v="default"/>
+          <Receive_request v="Disabled"/>
+          <Idle_line_interrupt v="Disabled"/>
+          <LIN_Break_detect_interrupt v="Disabled"/>
+          <Input_active_edge_interrupt v="Disabled"/>
+          <ISR_name v=""/>
+        </group>
+        <group name="Error interrupt">
+          <Interrupt v="Vsci1err"/>
+          <Priority v="default"/>
+          <Receive_framing_error_interrupt v="Disabled"/>
+          <Receive_noise_error_interrupt v="Disabled"/>
+          <Receive_overrun_interrupt v="Disabled"/>
+          <Receive_parity_error_interrupt v="Disabled"/>
+          <ISR_name v=""/>
+        </group>
+      </group>
+      <group name="Initialization">
+        <Call_Init_method v="yes"/>
+        <Transmitter v="Disabled"/>
+        <Receiver v="Disabled"/>
+      </group>
+    </Properties>
+
+    <Methods>
+      <Init v="generate code"/>
+    </Methods>
+
+    <Events>
+    </Events>
+  </Bean>
+
+</PE_PROJECT_SETTINGS_DOCUMENTATION>

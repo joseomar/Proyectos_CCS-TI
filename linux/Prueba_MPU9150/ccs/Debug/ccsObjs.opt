@@ -1,0 +1,1 @@
+"./uartstdio.obj" "./main.obj" -l"libc.a" -l"/home/jose/Stellaries_ware/boards/linux/Prueba_MPU9150/ccs/../../../../driverlib/ccs-cm4f/Debug/driverlib.lib" -l"/home/jose/Stellaries_ware/boards/linux/Prueba_MPU9150/ccs/../../../../sensorlib/ccs/Debug/sensorlib.lib" "../lm4f120h5qr.cmd" 

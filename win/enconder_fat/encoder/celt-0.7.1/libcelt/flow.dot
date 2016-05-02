@@ -1,0 +1,191 @@
+digraph sarien {
+node [shape=box];edge [color=black style=solid];
+node_1 [ label="main\n int ()\ntestcelt.c:46" ]
+node_2 [ label="fprintf\n\n:0" ]
+	node_1 -> node_2 ;
+node_3 [ label="malloc\n\n:0" ]
+	node_1 -> node_3 ;
+node_4 [ label="atoi\n\n:0" ]
+	node_1 -> node_4 ;
+node_5 [ label="celt_mode_create\n CELTMode * ()\nmodes.c:237" ]
+	node_1 -> node_5 ;
+node_6 [ label="scanf\n\n:0" ]
+	node_5 -> node_6 ;
+node_7 [ label="celt_alloc\n\n:0" ]
+	node_5 -> node_7 ;
+node_8 [ label="celt_free\n\n:0" ]
+	node_5 -> node_8 ;
+node_9 [ label="celt_warning\n\n:0" ]
+	node_5 -> node_9 ;
+node_10 [ label="CELT_COPY\n\n:0" ]
+	node_5 -> node_10 ;
+node_11 [ label="QCONST16\n\n:0" ]
+	node_5 -> node_11 ;
+node_12 [ label="compute_ebands\n celt_int16 * ()\nmodes.c:121" ]
+	node_5 -> node_12 ;
+node_13 [ label="celt_alloc\n\n:0" ]
+	node_12 -> node_13 ;
+node_14 [ label="compute_allocation_table\n void ()\nmodes.c:184" ]
+	node_5 -> node_14 ;
+node_15 [ label="celt_alloc\n\n:0" ]
+	node_14 -> node_15 ;
+node_16 [ label="sin\n\n:0" ]
+	node_5 -> node_16 ;
+node_17 [ label="MIN32\n\n:0" ]
+	node_5 -> node_17 ;
+node_18 [ label="compute_alloc_cache\n celt_int16 ** ()\nrate.c:49" ]
+	node_5 -> node_18 ;
+node_19 [ label="celt_alloc\n\n:0" ]
+	node_18 -> node_19 ;
+node_20 [ label="get_required_bits\n void ()\ncwrs.c:780" ]
+	node_18 -> node_20 ;
+node_21 [ label="celt_assert\n\n:0" ]
+	node_20 -> node_21 ;
+node_22 [ label="fits_in32\n int ()\ncwrs.c:301" ]
+	node_20 -> node_22 ;
+node_23 [ label="VARDECL\n\n:0" ]
+	node_20 -> node_23 ;
+node_24 [ label="ALLOC\n\n:0" ]
+	node_20 -> node_24 ;
+node_25 [ label="ncwrs_urow\n celt_uint32 ()\ncwrs.c:410" ]
+	node_20 -> node_25 ;
+node_26 [ label="celt_assert\n\n:0" ]
+	node_25 -> node_26 ;
+node_27 [ label="unext\n inline void ()\ncwrs.c:379" ]
+	node_25 -> node_27 ;
+node_28 [ label="UADD32\n\n:0" ]
+	node_27 -> node_28 ;
+node_29 [ label="imusdiv32even\n inline celt_uint32 ()\ncwrs.c:134" ]
+	node_25 -> node_29 ;
+node_30 [ label="celt_assert\n\n:0" ]
+	node_29 -> node_30 ;
+node_31 [ label="EC_ILOG\n\n:0" ]
+	node_29 -> node_31 ;
+node_32 [ label="imusdiv32odd\n inline celt_uint32 ()\ncwrs.c:122" ]
+	node_25 -> node_32 ;
+node_33 [ label="log2_frac\n int ()\ncwrs.c:49" ]
+	node_20 -> node_33 ;
+node_34 [ label="EC_ILOG\n\n:0" ]
+	node_33 -> node_34 ;
+node_35 [ label="get_required_bits_pair\n celt_int16 * ()\ncwrs.c:732" ]
+	node_20 -> node_35 ;
+	node_35 -> node_22 ;
+	node_35 -> node_20 ;
+	node_35 -> node_35 ;
+node_39 [ label="get_required_split_bits\n void ()\ncwrs.c:700" ]
+	node_35 -> node_39 ;
+	node_39 -> node_22 ;
+	node_39 -> node_20 ;
+	node_39 -> node_33 ;
+node_43 [ label="celt_assert\n\n:0" ]
+	node_35 -> node_43 ;
+	node_20 -> node_39 ;
+node_45 [ label="get_pulses\n\n:0" ]
+	node_18 -> node_45 ;
+node_46 [ label="celt_free\n\n:0" ]
+	node_18 -> node_46 ;
+node_47 [ label="free\n\n:0" ]
+	node_18 -> node_47 ;
+node_48 [ label="clt_mdct_init\n void ()\nmdct.c:61" ]
+	node_5 -> node_48 ;
+node_49 [ label="cpx32_fft_alloc\n\n:0" ]
+	node_48 -> node_49 ;
+node_50 [ label="celt_alloc\n\n:0" ]
+	node_48 -> node_50 ;
+node_51 [ label="cos\n\n:0" ]
+	node_48 -> node_51 ;
+node_52 [ label="celt_cos_norm\n\n:0" ]
+	node_48 -> node_52 ;
+node_53 [ label="DIV32\n\n:0" ]
+	node_48 -> node_53 ;
+node_54 [ label="ADD32\n\n:0" ]
+	node_48 -> node_54 ;
+node_55 [ label="SHL32\n\n:0" ]
+	node_48 -> node_55 ;
+node_56 [ label="EXTEND32\n\n:0" ]
+	node_48 -> node_56 ;
+node_57 [ label="quant_prob_alloc\n int * ()\nquant_bands.c:66" ]
+	node_5 -> node_57 ;
+node_58 [ label="celt_alloc\n\n:0" ]
+	node_57 -> node_58 ;
+node_59 [ label="ec_laplace_get_start_freq\n int ()\nlaplace.c:39" ]
+	node_57 -> node_59 ;
+node_60 [ label="celt_mode_destroy\n void ()\nmodes.c:408" ]
+	node_5 -> node_60 ;
+node_61 [ label="celt_warning\n\n:0" ]
+	node_60 -> node_61 ;
+node_62 [ label="celt_free\n\n:0" ]
+	node_60 -> node_62 ;
+node_63 [ label="clt_mdct_clear\n void ()\nmdct.c:90" ]
+	node_60 -> node_63 ;
+node_64 [ label="cpx32_fft_free\n\n:0" ]
+	node_63 -> node_64 ;
+node_65 [ label="celt_free\n\n:0" ]
+	node_63 -> node_65 ;
+node_66 [ label="quant_prob_free\n void ()\nquant_bands.c:86" ]
+	node_60 -> node_66 ;
+node_67 [ label="celt_free\n\n:0" ]
+	node_66 -> node_67 ;
+node_68 [ label="fopen\n\n:0" ]
+	node_1 -> node_68 ;
+node_69 [ label="dump_modes\n void ()\ndump_modes.c:55" ]
+	node_1 -> node_69 ;
+node_70 [ label="fprintf\n\n:0" ]
+	node_69 -> node_70 ;
+node_71 [ label="fclose\n\n:0" ]
+	node_1 -> node_71 ;
+node_72 [ label="dump_header\n void ()\ndump_modes.c:159" ]
+	node_1 -> node_72 ;
+node_73 [ label="fprintf\n\n:0" ]
+	node_72 -> node_73 ;
+	node_1 -> node_60 ;
+node_75 [ label="free\n\n:0" ]
+	node_1 -> node_75 ;
+node_76 [ label="celt_mode_info\n int ()\nmodes.c:58" ]
+	node_1 -> node_76 ;
+node_77 [ label="check_mode\n int ()\nmodes.c:458" ]
+	node_76 -> node_77 ;
+node_78 [ label="celt_warning\n\n:0" ]
+	node_77 -> node_78 ;
+node_79 [ label="celt_encoder_create\n CELTEncoder * ()\ncelt.c:135" ]
+	node_1 -> node_79 ;
+	node_79 -> node_77 ;
+node_81 [ label="celt_warning\n\n:0" ]
+	node_79 -> node_81 ;
+node_82 [ label="celt_alloc\n\n:0" ]
+	node_79 -> node_82 ;
+node_83 [ label="QCONST16\n\n:0" ]
+	node_79 -> node_83 ;
+node_84 [ label="celt_encoder_destroy\n void ()\ncelt.c:214" ]
+	node_79 -> node_84 ;
+node_85 [ label="celt_warning\n\n:0" ]
+	node_84 -> node_85 ;
+	node_84 -> node_77 ;
+node_87 [ label="celt_free\n\n:0" ]
+	node_84 -> node_87 ;
+node_88 [ label="celt_strerror\n\n:0" ]
+	node_1 -> node_88 ;
+node_89 [ label="celt_decoder_create\n\n:0" ]
+	node_1 -> node_89 ;
+node_90 [ label="celt_encoder_ctl\n\n:0" ]
+	node_1 -> node_90 ;
+node_91 [ label="CELT_SET_COMPLEXITY\n\n:0" ]
+	node_1 -> node_91 ;
+node_92 [ label="feof\n\n:0" ]
+	node_1 -> node_92 ;
+node_93 [ label="fread\n\n:0" ]
+	node_1 -> node_93 ;
+node_94 [ label="rand\n\n:0" ]
+	node_1 -> node_94 ;
+node_95 [ label="celt_decode\n\n:0" ]
+	node_1 -> node_95 ;
+node_96 [ label="fwrite\n\n:0" ]
+	node_1 -> node_96 ;
+node_97 [ label="PRINT_MIPS\n\n:0" ]
+	node_1 -> node_97 ;
+	node_1 -> node_84 ;
+node_99 [ label="celt_decoder_destroy\n\n:0" ]
+	node_1 -> node_99 ;
+node_100 [ label="sqrt\n\n:0" ]
+	node_1 -> node_100 ;
+}

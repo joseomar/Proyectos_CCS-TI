@@ -1,0 +1,4 @@
+Data:2 < ADDXPR ONLY_ADD_IF_NEW "fin01[0]"
+Data:2 < ADDXPR ONLY_ADD_IF_NEW " p_w"
+Data:2 < ADDXPR ONLY_ADD_IF_NEW "i_w"
+Data:2 < ADDXPR ONLY_ADD_IF_NEW " bytes_per_packet"

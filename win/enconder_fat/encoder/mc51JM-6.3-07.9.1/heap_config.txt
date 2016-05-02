@@ -1,0 +1,2 @@
+heap 0x6000
+stack 0x0400

@@ -1,0 +1,518 @@
+==30709== Memcheck, a memory error detector
+==30709== Copyright (C) 2002-2009, and GNU GPL'd, by Julian Seward et al.
+==30709== Using Valgrind-3.6.0.SVN-Debian and LibVEX; rerun with -h for copyright info
+==30709== Command: ./celtenc /media/mp3/prueba.wav prueba.oga
+==30709== Parent PID: 8149
+==30709== 
+--30709-- 
+--30709-- Valgrind options:
+--30709--    --suppressions=/usr/lib/valgrind/debian-libc6-dbg.supp
+--30709--    -v
+--30709--    --tool=memcheck
+--30709--    --leak-check=yes
+--30709--    --show-reachable=yes
+--30709--    --num-callers=20
+--30709--    --track-fds=yes
+--30709--    --log-file=valgrind.out
+--30709-- Contents of /proc/version:
+--30709--   Linux version 2.6.32-24-generic (buildd@yellow) (gcc version 4.4.3 (Ubuntu 4.4.3-4ubuntu5) ) #39-Ubuntu SMP Wed Jul 28 05:14:15 UTC 2010
+--30709-- Arch and hwcaps: AMD64, amd64-sse3-cx16
+--30709-- Page sizes: currently 4096, max supported 4096
+--30709-- Valgrind library directory: /usr/lib/valgrind
+--30709-- Reading syms from /bin/bash (0x400000)
+--30709-- Reading debug info from /bin/bash ..
+--30709-- .. CRC mismatch (computed 617556d0 wanted 73b4f14a)
+--30709--    object doesn't have a symbol table
+--30709-- Reading syms from /lib/ld-2.11.1.so (0x4000000)
+--30709-- Reading debug info from /lib/ld-2.11.1.so ..
+--30709-- .. CRC mismatch (computed 99d13f6f wanted 0962e544)
+--30709-- Reading debug info from /usr/lib/debug/lib/ld-2.11.1.so ..
+--30709-- Reading syms from /usr/lib/valgrind/memcheck-amd64-linux (0x38000000)
+--30709--    object doesn't have a dynamic symbol table
+--30709-- Reading suppressions file: /usr/lib/valgrind/debian-libc6-dbg.supp
+--30709-- Reading suppressions file: /usr/lib/valgrind/default.supp
+--30709-- REDIR: 0x40184a0 (strlen) redirected to 0x380402d7 (vgPlain_amd64_linux_REDIR_FOR_strlen)
+--30709-- Reading syms from /usr/lib/valgrind/vgpreload_core-amd64-linux.so (0x4a23000)
+--30709-- Reading syms from /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so (0x4c25000)
+==30709== WARNING: new redirection conflicts with existing -- ignoring it
+--30709--     new: 0x040184a0 (strlen              ) R-> 0x04c29710 strlen
+--30709-- REDIR: 0x4018310 (index) redirected to 0x4c29320 (index)
+--30709-- REDIR: 0x4018390 (strcmp) redirected to 0x4c29cf0 (strcmp)
+--30709-- Reading syms from /lib/libncurses.so.5.7 (0x4e2e000)
+--30709-- Reading debug info from /lib/libncurses.so.5.7 ..
+--30709-- .. CRC mismatch (computed bec29619 wanted b67180b4)
+--30709--    object doesn't have a symbol table
+--30709-- Reading syms from /lib/libdl-2.11.1.so (0x5071000)
+--30709-- Reading debug info from /lib/libdl-2.11.1.so ..
+--30709-- .. CRC mismatch (computed 4a29f474 wanted e0b8d72c)
+--30709-- Reading debug info from /usr/lib/debug/lib/libdl-2.11.1.so ..
+--30709-- Reading syms from /lib/libc-2.11.1.so (0x5275000)
+--30709-- Reading debug info from /lib/libc-2.11.1.so ..
+--30709-- .. CRC mismatch (computed c73d5a83 wanted 02758e3e)
+--30709-- Reading debug info from /usr/lib/debug/lib/libc-2.11.1.so ..
+--30709-- REDIR: 0x52f9ad0 (__GI_strrchr) redirected to 0x4c29140 (__GI_strrchr)
+--30709-- REDIR: 0x52f65e0 (__GI_strcmp) redirected to 0x4c29ca0 (__GI_strcmp)
+--30709-- REDIR: 0x52f8010 (__GI_strlen) redirected to 0x4c296d0 (__GI_strlen)
+--30709-- REDIR: 0x52f8220 (__GI_strncmp) redirected to 0x4c29be0 (__GI_strncmp)
+--30709-- REDIR: 0x52f6520 (__GI_strchr) redirected to 0x4c29220 (__GI_strchr)
+--30709-- REDIR: 0x52fd250 (strchrnul) redirected to 0x4c2aa10 (strchrnul)
+--30709-- REDIR: 0x52fb380 (mempcpy) redirected to 0x4c2aa80 (mempcpy)
+--30709-- REDIR: 0x52fa850 (memset) redirected to 0x4c2a930 (memset)
+--30709-- REDIR: 0x52fa1e0 (memchr) redirected to 0x4c29d90 (memchr)
+--30709-- REDIR: 0x52fbc60 (memcpy) redirected to 0x4c29dc0 (memcpy)
+--30709-- REDIR: 0x52f8060 (strnlen) redirected to 0x4c29630 (strnlen)
+--30709-- REDIR: 0x52fb9c0 (__GI_stpcpy) redirected to 0x4c2a6c0 (__GI_stpcpy)
+--30709-- REDIR: 0x52f7a60 (__GI_strcpy) redirected to 0x4c29800 (__GI_strcpy)
+--30709-- REDIR: 0x52fd200 (__GI___rawmemchr) redirected to 0x4c2aa60 (__GI___rawmemchr)
+--30709-- REDIR: 0x52f7fe0 (strlen) redirected to 0x4a235dc (_vgnU_ifunc_wrapper)
+==30709== WARNING: new redirection conflicts with existing -- ignoring it
+--30709--     new: 0x052f8010 (__GI_strlen         ) R-> 0x04c296b0 strlen
+--30709-- REDIR: 0x52f7a30 (strcpy) redirected to 0x4a235dc (_vgnU_ifunc_wrapper)
+--30709-- REDIR: 0x539f020 (???) redirected to 0x4c29730 (strcpy)
+--30709-- REDIR: 0x52f81e0 (strncmp) redirected to 0x4a235dc (_vgnU_ifunc_wrapper)
+--30709-- REDIR: 0x53a3820 (__strncmp_ssse3) redirected to 0x4c29b70 (strncmp)
+--30709-- REDIR: 0x52f9aa0 (rindex) redirected to 0x4a235dc (_vgnU_ifunc_wrapper)
+==30709== WARNING: new redirection conflicts with existing -- ignoring it
+--30709--     new: 0x052f9ad0 (__GI_strrchr        ) R-> 0x04c29110 rindex
+--30709-- REDIR: 0xffffffffff600400 (???) redirected to 0x380402cd (vgPlain_amd64_linux_REDIR_FOR_vtime)
+--30709-- REDIR: 0x52f65a0 (strcmp) redirected to 0x4a235dc (_vgnU_ifunc_wrapper)
+--30709-- REDIR: 0x53a25c0 (__strcmp_ssse3) redirected to 0x4c29c50 (strcmp)
+--30709-- REDIR: 0x5371f80 (__strcpy_chk) redirected to 0x4c2b100 (__strcpy_chk)
+--30709-- REDIR: 0x52f64f0 (index) redirected to 0x4a235dc (_vgnU_ifunc_wrapper)
+==30709== WARNING: new redirection conflicts with existing -- ignoring it
+--30709--     new: 0x052f6520 (__GI_strchr         ) R-> 0x04c291e0 index
+--30709-- REDIR: 0xffffffffff600000 (???) redirected to 0x380402c3 (vgPlain_amd64_linux_REDIR_FOR_vgettimeofday)
+--30709-- REDIR: 0x52f9a70 (strncpy) redirected to 0x4a235dc (_vgnU_ifunc_wrapper)
+--30709-- REDIR: 0x539fa40 (???) redirected to 0x4c298d0 (strncpy)
+==30713== 
+==30713== FILE DESCRIPTORS: 4 open at exit.
+==30713== Open file descriptor 3: /home/cesar/Descargas/celt-0.7.1/tools/valgrind.out
+==30713==    <inherited from parent>
+==30713== 
+==30713== Open file descriptor 2: /dev/null
+==30713==    at 0x534DD37: dup2 (syscall-template.S:82)
+==30713==    by 0x469695: ??? (in /bin/bash)
+==30713==    by 0x46A24B: do_redirections (in /bin/bash)
+==30713==    by 0x4374FB: ??? (in /bin/bash)
+==30713==    by 0x434B35: execute_command_internal (in /bin/bash)
+==30713==    by 0x472629: parse_and_execute (in /bin/bash)
+==30713==    by 0x44997D: command_substitute (in /bin/bash)
+==30713==    by 0x44E2A6: ??? (in /bin/bash)
+==30713==    by 0x44FBBB: ??? (in /bin/bash)
+==30713==    by 0x4500A3: expand_word_unsplit (in /bin/bash)
+==30713==    by 0x4355A5: ??? (in /bin/bash)
+==30713==    by 0x4340D3: execute_command_internal (in /bin/bash)
+==30713==    by 0x434C0D: execute_command (in /bin/bash)
+==30713==    by 0x4340B7: execute_command_internal (in /bin/bash)
+==30713==    by 0x434C0D: execute_command (in /bin/bash)
+==30713==    by 0x421961: reader_loop (in /bin/bash)
+==30713==    by 0x42106F: main (in /bin/bash)
+==30713== 
+==30713== Open file descriptor 1:
+==30713==    at 0x534DD37: dup2 (syscall-template.S:82)
+==30713==    by 0x449647: command_substitute (in /bin/bash)
+==30713==    by 0x44E2A6: ??? (in /bin/bash)
+==30713==    by 0x44FBBB: ??? (in /bin/bash)
+==30713==    by 0x4500A3: expand_word_unsplit (in /bin/bash)
+==30713==    by 0x4355A5: ??? (in /bin/bash)
+==30713==    by 0x4340D3: execute_command_internal (in /bin/bash)
+==30713==    by 0x434C0D: execute_command (in /bin/bash)
+==30713==    by 0x4340B7: execute_command_internal (in /bin/bash)
+==30713==    by 0x434C0D: execute_command (in /bin/bash)
+==30713==    by 0x421961: reader_loop (in /bin/bash)
+==30713==    by 0x42106F: main (in /bin/bash)
+==30713== 
+==30713== Open file descriptor 0: /dev/pts/2
+==30713==    <inherited from parent>
+==30713== 
+==30713== 
+==30713== HEAP SUMMARY:
+==30713==     in use at exit: 0 bytes in 0 blocks
+==30713==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==30713== 
+==30713== All heap blocks were freed -- no leaks are possible
+==30713== 
+==30713== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 4 from 4)
+--30713-- 
+--30713-- used_suppression:      2 dl-hack3-cond-1
+--30713-- used_suppression:      2 glibc-2.5.x-on-SUSE-10.2-(PPC)-2a
+==30713== 
+==30713== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 4 from 4)
+==30712== 
+==30712== FILE DESCRIPTORS: 4 open at exit.
+==30712== Open file descriptor 3: /home/cesar/Descargas/celt-0.7.1/tools/valgrind.out
+==30712==    <inherited from parent>
+==30712== 
+==30712== Open file descriptor 2: /dev/pts/2
+==30712==    <inherited from parent>
+==30712== 
+==30712== Open file descriptor 1:
+==30712==    at 0x534DD37: dup2 (syscall-template.S:82)
+==30712==    by 0x449647: command_substitute (in /bin/bash)
+==30712==    by 0x44E2A6: ??? (in /bin/bash)
+==30712==    by 0x44FBBB: ??? (in /bin/bash)
+==30712==    by 0x4500A3: expand_word_unsplit (in /bin/bash)
+==30712==    by 0x4355A5: ??? (in /bin/bash)
+==30712==    by 0x4340D3: execute_command_internal (in /bin/bash)
+==30712==    by 0x434C0D: execute_command (in /bin/bash)
+==30712==    by 0x4340B7: execute_command_internal (in /bin/bash)
+==30712==    by 0x434C0D: execute_command (in /bin/bash)
+==30712==    by 0x421961: reader_loop (in /bin/bash)
+==30712==    by 0x42106F: main (in /bin/bash)
+==30712== 
+==30712== Open file descriptor 0: /dev/pts/2
+==30712==    <inherited from parent>
+==30712== 
+==30712== 
+==30712== HEAP SUMMARY:
+==30712==     in use at exit: 0 bytes in 0 blocks
+==30712==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==30712== 
+==30712== All heap blocks were freed -- no leaks are possible
+==30712== 
+==30712== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 4 from 4)
+--30712-- 
+--30712-- used_suppression:      2 dl-hack3-cond-1
+--30712-- used_suppression:      2 glibc-2.5.x-on-SUSE-10.2-(PPC)-2a
+==30712== 
+==30712== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 4 from 4)
+==30734== 
+==30734== FILE DESCRIPTORS: 4 open at exit.
+==30734== Open file descriptor 3: /home/cesar/Descargas/celt-0.7.1/tools/valgrind.out
+==30734==    <inherited from parent>
+==30734== 
+==30734== Open file descriptor 2: /dev/null
+==30734==    at 0x534DD37: dup2 (syscall-template.S:82)
+==30734==    by 0x4698FF: ??? (in /bin/bash)
+==30734==    by 0x46A24B: do_redirections (in /bin/bash)
+==30734==    by 0x4374FB: ??? (in /bin/bash)
+==30734==    by 0x434B35: execute_command_internal (in /bin/bash)
+==30734==    by 0x434C0D: execute_command (in /bin/bash)
+==30734==    by 0x43457F: execute_command_internal (in /bin/bash)
+==30734==    by 0x434C0D: execute_command (in /bin/bash)
+==30734==    by 0x421961: reader_loop (in /bin/bash)
+==30734==    by 0x42106F: main (in /bin/bash)
+==30734== 
+==30734== Open file descriptor 1: /dev/null
+==30734==    at 0x534DD37: dup2 (syscall-template.S:82)
+==30734==    by 0x469695: ??? (in /bin/bash)
+==30734==    by 0x46A24B: do_redirections (in /bin/bash)
+==30734==    by 0x4374FB: ??? (in /bin/bash)
+==30734==    by 0x434B35: execute_command_internal (in /bin/bash)
+==30734==    by 0x434C0D: execute_command (in /bin/bash)
+==30734==    by 0x43457F: execute_command_internal (in /bin/bash)
+==30734==    by 0x434C0D: execute_command (in /bin/bash)
+==30734==    by 0x421961: reader_loop (in /bin/bash)
+==30734==    by 0x42106F: main (in /bin/bash)
+==30734== 
+==30734== Open file descriptor 0: /dev/pts/2
+==30734==    <inherited from parent>
+==30734== 
+==30734== 
+==30734== HEAP SUMMARY:
+==30734==     in use at exit: 0 bytes in 0 blocks
+==30734==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==30734== 
+==30734== All heap blocks were freed -- no leaks are possible
+==30734== 
+==30734== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 4 from 4)
+--30734-- 
+--30734-- used_suppression:      2 dl-hack3-cond-1
+--30734-- used_suppression:      2 glibc-2.5.x-on-SUSE-10.2-(PPC)-2a
+==30734== 
+==30734== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 4 from 4)
+==30735== 
+==30735== FILE DESCRIPTORS: 4 open at exit.
+==30735== Open file descriptor 3: /home/cesar/Descargas/celt-0.7.1/tools/valgrind.out
+==30735==    <inherited from parent>
+==30735== 
+==30735== Open file descriptor 2: /dev/pts/2
+==30735==    at 0x534DD37: dup2 (syscall-template.S:82)
+==30735==    by 0x4698FF: ??? (in /bin/bash)
+==30735==    by 0x46A24B: do_redirections (in /bin/bash)
+==30735==    by 0x4337A1: execute_command_internal (in /bin/bash)
+==30735==    by 0x472629: parse_and_execute (in /bin/bash)
+==30735==    by 0x44997D: command_substitute (in /bin/bash)
+==30735==    by 0x44E2A6: ??? (in /bin/bash)
+==30735==    by 0x44EA6C: ??? (in /bin/bash)
+==30735==    by 0x44F286: ??? (in /bin/bash)
+==30735==    by 0x43672E: ??? (in /bin/bash)
+==30735==    by 0x433FA3: execute_command_internal (in /bin/bash)
+==30735==    by 0x434C0D: execute_command (in /bin/bash)
+==30735==    by 0x4359AB: ??? (in /bin/bash)
+==30735==    by 0x4340B7: execute_command_internal (in /bin/bash)
+==30735==    by 0x434C0D: execute_command (in /bin/bash)
+==30735==    by 0x4340B7: execute_command_internal (in /bin/bash)
+==30735==    by 0x43475D: execute_command_internal (in /bin/bash)
+==30735==    by 0x434C0D: execute_command (in /bin/bash)
+==30735==    by 0x4340B7: execute_command_internal (in /bin/bash)
+==30735==    by 0x434C0D: execute_command (in /bin/bash)
+==30735== 
+==30735== Open file descriptor 1:
+==30735==    at 0x534DD37: dup2 (syscall-template.S:82)
+==30735==    by 0x449647: command_substitute (in /bin/bash)
+==30735==    by 0x44E2A6: ??? (in /bin/bash)
+==30735==    by 0x44EA6C: ??? (in /bin/bash)
+==30735==    by 0x44F286: ??? (in /bin/bash)
+==30735==    by 0x43672E: ??? (in /bin/bash)
+==30735==    by 0x433FA3: execute_command_internal (in /bin/bash)
+==30735==    by 0x434C0D: execute_command (in /bin/bash)
+==30735==    by 0x4359AB: ??? (in /bin/bash)
+==30735==    by 0x4340B7: execute_command_internal (in /bin/bash)
+==30735==    by 0x434C0D: execute_command (in /bin/bash)
+==30735==    by 0x4340B7: execute_command_internal (in /bin/bash)
+==30735==    by 0x43475D: execute_command_internal (in /bin/bash)
+==30735==    by 0x434C0D: execute_command (in /bin/bash)
+==30735==    by 0x4340B7: execute_command_internal (in /bin/bash)
+==30735==    by 0x434C0D: execute_command (in /bin/bash)
+==30735==    by 0x434721: execute_command_internal (in /bin/bash)
+==30735==    by 0x434C0D: execute_command (in /bin/bash)
+==30735==    by 0x434721: execute_command_internal (in /bin/bash)
+==30735==    by 0x434C0D: execute_command (in /bin/bash)
+==30735== 
+==30735== Open file descriptor 0: /dev/pts/2
+==30735==    <inherited from parent>
+==30735== 
+==30735== 
+==30735== HEAP SUMMARY:
+==30735==     in use at exit: 0 bytes in 0 blocks
+==30735==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==30735== 
+==30735== All heap blocks were freed -- no leaks are possible
+==30735== 
+==30735== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 4 from 4)
+--30735-- 
+--30735-- used_suppression:      2 dl-hack3-cond-1
+--30735-- used_suppression:      2 glibc-2.5.x-on-SUSE-10.2-(PPC)-2a
+==30735== 
+==30735== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 4 from 4)
+==30737== 
+==30737== FILE DESCRIPTORS: 4 open at exit.
+==30737== Open file descriptor 3: /home/cesar/Descargas/celt-0.7.1/tools/valgrind.out
+==30737==    <inherited from parent>
+==30737== 
+==30737== Open file descriptor 2: /dev/pts/2
+==30737==    <inherited from parent>
+==30737== 
+==30737== Open file descriptor 1:
+==30737==    at 0x534DD37: dup2 (syscall-template.S:82)
+==30737==    by 0x43279A: ??? (in /bin/bash)
+==30737==    by 0x436564: ??? (in /bin/bash)
+==30737==    by 0x433FA3: execute_command_internal (in /bin/bash)
+==30737==    by 0x4331DD: ??? (in /bin/bash)
+==30737==    by 0x4346AF: execute_command_internal (in /bin/bash)
+==30737==    by 0x472629: parse_and_execute (in /bin/bash)
+==30737==    by 0x44997D: command_substitute (in /bin/bash)
+==30737==    by 0x44E2A6: ??? (in /bin/bash)
+==30737==    by 0x44FBBB: ??? (in /bin/bash)
+==30737==    by 0x44FD5B: expand_string_assignment (in /bin/bash)
+==30737==    by 0x44AB0A: ??? (in /bin/bash)
+==30737==    by 0x44AF4E: ??? (in /bin/bash)
+==30737==    by 0x44F9D2: ??? (in /bin/bash)
+==30737==    by 0x43672E: ??? (in /bin/bash)
+==30737==    by 0x433FA3: execute_command_internal (in /bin/bash)
+==30737==    by 0x43475D: execute_command_internal (in /bin/bash)
+==30737==    by 0x434C0D: execute_command (in /bin/bash)
+==30737==    by 0x434721: execute_command_internal (in /bin/bash)
+==30737==    by 0x434C0D: execute_command (in /bin/bash)
+==30737== 
+==30737== Open file descriptor 0: /dev/pts/2
+==30737==    <inherited from parent>
+==30737== 
+==30737== 
+==30737== HEAP SUMMARY:
+==30737==     in use at exit: 0 bytes in 0 blocks
+==30737==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==30737== 
+==30737== All heap blocks were freed -- no leaks are possible
+==30737== 
+==30737== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 4 from 4)
+--30737-- 
+--30737-- used_suppression:      2 dl-hack3-cond-1
+--30737-- used_suppression:      2 glibc-2.5.x-on-SUSE-10.2-(PPC)-2a
+==30737== 
+==30737== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 4 from 4)
+==30736== 
+==30736== FILE DESCRIPTORS: 4 open at exit.
+==30736== Open file descriptor 3: /home/cesar/Descargas/celt-0.7.1/tools/valgrind.out
+==30736==    <inherited from parent>
+==30736== 
+==30736== Open file descriptor 2: /dev/pts/2
+==30736==    <inherited from parent>
+==30736== 
+==30736== Open file descriptor 1:
+==30736==    at 0x534DD37: dup2 (syscall-template.S:82)
+==30736==    by 0x449647: command_substitute (in /bin/bash)
+==30736==    by 0x44E2A6: ??? (in /bin/bash)
+==30736==    by 0x44FBBB: ??? (in /bin/bash)
+==30736==    by 0x44FD5B: expand_string_assignment (in /bin/bash)
+==30736==    by 0x44AB0A: ??? (in /bin/bash)
+==30736==    by 0x44AF4E: ??? (in /bin/bash)
+==30736==    by 0x44F9D2: ??? (in /bin/bash)
+==30736==    by 0x43672E: ??? (in /bin/bash)
+==30736==    by 0x433FA3: execute_command_internal (in /bin/bash)
+==30736==    by 0x43475D: execute_command_internal (in /bin/bash)
+==30736==    by 0x434C0D: execute_command (in /bin/bash)
+==30736==    by 0x434721: execute_command_internal (in /bin/bash)
+==30736==    by 0x434C0D: execute_command (in /bin/bash)
+==30736==    by 0x434721: execute_command_internal (in /bin/bash)
+==30736==    by 0x434C0D: execute_command (in /bin/bash)
+==30736==    by 0x434721: execute_command_internal (in /bin/bash)
+==30736==    by 0x434C0D: execute_command (in /bin/bash)
+==30736==    by 0x434721: execute_command_internal (in /bin/bash)
+==30736==    by 0x434C0D: execute_command (in /bin/bash)
+==30736== 
+==30736== Open file descriptor 0: /dev/pts/2
+==30736==    <inherited from parent>
+==30736== 
+==30736== 
+==30736== HEAP SUMMARY:
+==30736==     in use at exit: 0 bytes in 0 blocks
+==30736==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==30736== 
+==30736== All heap blocks were freed -- no leaks are possible
+==30736== 
+==30736== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 4 from 4)
+--30736-- 
+--30736-- used_suppression:      2 dl-hack3-cond-1
+--30736-- used_suppression:      2 glibc-2.5.x-on-SUSE-10.2-(PPC)-2a
+==30736== 
+==30736== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 4 from 4)
+==30739== 
+==30739== FILE DESCRIPTORS: 4 open at exit.
+==30739== Open file descriptor 3: /home/cesar/Descargas/celt-0.7.1/tools/valgrind.out
+==30739==    <inherited from parent>
+==30739== 
+==30739== Open file descriptor 2: /dev/pts/2
+==30739==    <inherited from parent>
+==30739== 
+==30739== Open file descriptor 1:
+==30739==    at 0x534DD37: dup2 (syscall-template.S:82)
+==30739==    by 0x449647: command_substitute (in /bin/bash)
+==30739==    by 0x44E2A6: ??? (in /bin/bash)
+==30739==    by 0x44FBBB: ??? (in /bin/bash)
+==30739==    by 0x44FD5B: expand_string_assignment (in /bin/bash)
+==30739==    by 0x44AB0A: ??? (in /bin/bash)
+==30739==    by 0x44AF4E: ??? (in /bin/bash)
+==30739==    by 0x44F9D2: ??? (in /bin/bash)
+==30739==    by 0x43672E: ??? (in /bin/bash)
+==30739==    by 0x433FA3: execute_command_internal (in /bin/bash)
+==30739==    by 0x43475D: execute_command_internal (in /bin/bash)
+==30739==    by 0x434C0D: execute_command (in /bin/bash)
+==30739==    by 0x434721: execute_command_internal (in /bin/bash)
+==30739==    by 0x434C0D: execute_command (in /bin/bash)
+==30739==    by 0x434721: execute_command_internal (in /bin/bash)
+==30739==    by 0x434C0D: execute_command (in /bin/bash)
+==30739==    by 0x434721: execute_command_internal (in /bin/bash)
+==30739==    by 0x434C0D: execute_command (in /bin/bash)
+==30739==    by 0x434721: execute_command_internal (in /bin/bash)
+==30739==    by 0x434C0D: execute_command (in /bin/bash)
+==30739== 
+==30739== Open file descriptor 0: /dev/pts/2
+==30739==    <inherited from parent>
+==30739== 
+==30739== 
+==30739== HEAP SUMMARY:
+==30739==     in use at exit: 0 bytes in 0 blocks
+==30739==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==30739== 
+==30739== All heap blocks were freed -- no leaks are possible
+==30739== 
+==30739== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 4 from 4)
+--30739-- 
+--30739-- used_suppression:      2 dl-hack3-cond-1
+--30739-- used_suppression:      2 glibc-2.5.x-on-SUSE-10.2-(PPC)-2a
+==30739== 
+==30739== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 4 from 4)
+==30742== 
+==30742== FILE DESCRIPTORS: 4 open at exit.
+==30742== Open file descriptor 3: /home/cesar/Descargas/celt-0.7.1/tools/valgrind.out
+==30742==    <inherited from parent>
+==30742== 
+==30742== Open file descriptor 2: /dev/pts/2
+==30742==    <inherited from parent>
+==30742== 
+==30742== Open file descriptor 1:
+==30742==    at 0x534DD37: dup2 (syscall-template.S:82)
+==30742==    by 0x449647: command_substitute (in /bin/bash)
+==30742==    by 0x44E2A6: ??? (in /bin/bash)
+==30742==    by 0x44FBBB: ??? (in /bin/bash)
+==30742==    by 0x44FD5B: expand_string_assignment (in /bin/bash)
+==30742==    by 0x44AB0A: ??? (in /bin/bash)
+==30742==    by 0x44AF4E: ??? (in /bin/bash)
+==30742==    by 0x44F9D2: ??? (in /bin/bash)
+==30742==    by 0x43672E: ??? (in /bin/bash)
+==30742==    by 0x433FA3: execute_command_internal (in /bin/bash)
+==30742==    by 0x43475D: execute_command_internal (in /bin/bash)
+==30742==    by 0x434C0D: execute_command (in /bin/bash)
+==30742==    by 0x434721: execute_command_internal (in /bin/bash)
+==30742==    by 0x434C0D: execute_command (in /bin/bash)
+==30742==    by 0x434721: execute_command_internal (in /bin/bash)
+==30742==    by 0x434C0D: execute_command (in /bin/bash)
+==30742==    by 0x434721: execute_command_internal (in /bin/bash)
+==30742==    by 0x434C0D: execute_command (in /bin/bash)
+==30742==    by 0x434721: execute_command_internal (in /bin/bash)
+==30742==    by 0x434C0D: execute_command (in /bin/bash)
+==30742== 
+==30742== Open file descriptor 0: /dev/pts/2
+==30742==    <inherited from parent>
+==30742== 
+==30742== 
+==30742== HEAP SUMMARY:
+==30742==     in use at exit: 0 bytes in 0 blocks
+==30742==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==30742== 
+==30742== All heap blocks were freed -- no leaks are possible
+==30742== 
+==30742== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 4 from 4)
+--30742-- 
+--30742-- used_suppression:      2 dl-hack3-cond-1
+--30742-- used_suppression:      2 glibc-2.5.x-on-SUSE-10.2-(PPC)-2a
+==30742== 
+==30742== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 4 from 4)
+==30743== 
+==30743== FILE DESCRIPTORS: 4 open at exit.
+==30743== Open file descriptor 3: /home/cesar/Descargas/celt-0.7.1/tools/valgrind.out
+==30743==    <inherited from parent>
+==30743== 
+==30743== Open file descriptor 2: /dev/pts/2
+==30743==    <inherited from parent>
+==30743== 
+==30743== Open file descriptor 1:
+==30743==    at 0x534DD37: dup2 (syscall-template.S:82)
+==30743==    by 0x449647: command_substitute (in /bin/bash)
+==30743==    by 0x44E2A6: ??? (in /bin/bash)
+==30743==    by 0x44FBBB: ??? (in /bin/bash)
+==30743==    by 0x44FD5B: expand_string_assignment (in /bin/bash)
+==30743==    by 0x44AB0A: ??? (in /bin/bash)
+==30743==    by 0x44AF4E: ??? (in /bin/bash)
+==30743==    by 0x44F9D2: ??? (in /bin/bash)
+==30743==    by 0x43672E: ??? (in /bin/bash)
+==30743==    by 0x433FA3: execute_command_internal (in /bin/bash)
+==30743==    by 0x434C0D: execute_command (in /bin/bash)
+==30743==    by 0x434721: execute_command_internal (in /bin/bash)
+==30743==    by 0x433F1B: execute_command_internal (in /bin/bash)
+==30743==    by 0x434C0D: execute_command (in /bin/bash)
+==30743==    by 0x4345C8: execute_command_internal (in /bin/bash)
+==30743==    by 0x434C0D: execute_command (in /bin/bash)
+==30743==    by 0x4359AB: ??? (in /bin/bash)
+==30743==    by 0x4340B7: execute_command_internal (in /bin/bash)
+==30743==    by 0x43475D: execute_command_internal (in /bin/bash)
+==30743==    by 0x434C0D: execute_command (in /bin/bash)
+==30743== 
+==30743== Open file descriptor 0: /dev/pts/2
+==30743==    <inherited from parent>
+==30743== 
+==30743== 
+==30743== HEAP SUMMARY:
+==30743==     in use at exit: 0 bytes in 0 blocks
+==30743==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==30743== 
+==30743== All heap blocks were freed -- no leaks are possible
+==30743== 
+==30743== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 4 from 4)
+--30743-- 
+--30743-- used_suppression:      2 dl-hack3-cond-1
+--30743-- used_suppression:      2 glibc-2.5.x-on-SUSE-10.2-(PPC)-2a
+==30743== 
+==30743== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 4 from 4)

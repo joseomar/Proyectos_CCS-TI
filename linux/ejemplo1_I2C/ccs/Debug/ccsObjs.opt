@@ -1,0 +1,1 @@
+"./uartstdio.obj" "./main.obj" -l"libc.a" -l"/home/jose/Stellaries_ware/boards/linux/ejemplo1_I2C/ccs/../../../../driverlib/ccs-cm4f/Debug/driverlib-cm4f.lib" "../lm4f120h5qr.cmd" 

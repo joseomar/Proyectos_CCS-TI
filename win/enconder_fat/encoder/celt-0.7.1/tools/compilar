@@ -1,0 +1,1 @@
+ gcc -std=gnu99 -g -O2 -fvisibility=hidden -W -Wstrict-prototypes -Wall -Wextra -Wcast-align -Wnested-externs -Wshadow -Wno-parentheses -Wno-unused-parameter -Wno-sign-compare -o encoder2 celtenc.o wav_io.o skeleton.o  ../libcelt/.libs/libcelt0.so -logg -lm -Wl,-rpath -Wl,/media/mp3/pfc/CELT-FREESCALE/proyecto/celt-0.7.1/libcelt/.libs

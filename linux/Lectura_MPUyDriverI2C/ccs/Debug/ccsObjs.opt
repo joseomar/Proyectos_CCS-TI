@@ -1,0 +1,1 @@
+"./uartstdio.obj" "./mi_driver_I2C.obj" "./main.obj" "./gpio.obj" -l"libc.a" -l"/driverlib/ccs-cm4f/Debug/driverlib-cm4f.lib" -l"/sensorlib/ccs/Debug/sensorlib.lib" "../lm4f120h5qr.cmd" 

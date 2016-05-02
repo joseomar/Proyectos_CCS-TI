@@ -1,0 +1,1 @@
+"./startup_ccs.obj" "./main.obj" "./buttons.obj" -l"libc.a" -l"C:/StellarisWare/boards/Mi_carpetita/Interrupcion_boton/ccs/../../../../driverlib/ccs-cm4f/Debug/driverlib-cm4f.lib" "../lm4f120h5qr.cmd" 

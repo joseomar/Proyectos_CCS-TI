@@ -1,0 +1,20 @@
+digraph "callgraph" {
+  F2d3c548 [label="main\n563 447 896"];
+  F2d497b8 [label="celt_encode\n563 447 896"];
+  F2ddec38 [label="exp_rotation\n89 203 256"];
+  F2de0338 [label="alg_quant\n536 214 686"];
+  F2de1708 [label="encode_pulses\n129 749 019"];
+  F2e17778 [label="encode_pulses'2\n50 320 594"];
+  F2e181e8 [label="encode_pulses32\n118 760 314"];
+  F2e197e8 [label="icwrs\n86 580 180"];
+  F2e41068 [label="quant_bands\n563 447 896"];
+  F2d3c548 -> F2d497b8 [weight=3,label="563 447 896 (1 991x)"];
+  F2d497b8 -> F2e41068 [weight=3,label="563 447 896 (3 528x)"];
+  F2de0338 -> F2ddec38 [weight=2,label="89 203 256 (148 176x)"];
+  F2de0338 -> F2de1708 [weight=2,label="129 749 019 (74 088x)"];
+  F2de1708 -> F2e17778 [weight=2,label="50 320 594 (32 601x)"];
+  F2de1708 -> F2e181e8 [weight=2,label="70 214 950 (74 086x)"];
+  F2e17778 -> F2e181e8 [weight=2,label="48 545 364 (35 535x)"];
+  F2e181e8 -> F2e197e8 [weight=2,label="86 580 180 (59 881x)"];
+  F2e41068 -> F2de0338 [weight=3,label="536 214 686 (74 088x)"];
+}
